@@ -32,3 +32,5 @@ Install `dist\ScanBridge-0.5.2.msi`, then open ScanBridge from the Start menu. T
 Jobs and raw pages are under `%LOCALAPPDATA%\ScanBridge\Jobs`. The shared profile is not a shared document archive. Users do not automatically see each other's recovery files. Raw pages and vendor temporary inputs are retained during the integration pilot; automatic retention cleanup is not implemented.
 
 All-blank batches open Review instead of silently producing an empty PDF. Hidden pages remain recoverable. Import failures retain vendor callback metadata in the job directory.
+
+https://imgur.com/a/v3K4UFv
