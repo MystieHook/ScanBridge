@@ -32,10 +32,3 @@ Install `dist\ScanBridge-0.5.2.msi`, then open ScanBridge from the Start menu. T
 Jobs and raw pages are under `%LOCALAPPDATA%\ScanBridge\Jobs`. The shared profile is not a shared document archive. Users do not automatically see each other's recovery files. Raw pages and vendor temporary inputs are retained during the integration pilot; automatic retention cleanup is not implemented.
 
 All-blank batches open Review instead of silently producing an empty PDF. Hidden pages remain recoverable. Import failures retain vendor callback metadata in the job directory.
-
-
-## Output filenames
-
-The shared profile now stores filename format, optional prefix, custom name, and template. Presets include yyyy-MM-dd-HH-mm-ss, yyyy-MM-dd_HH-mm-ss, yyyyMMdd-HHmmss, and date only. Templates support {prefix}, {name}, {yyyy}, {MM}, {dd}, {HH}, {mm}, {ss}. Times use the local scan import timestamp, preserved when reviewing or recovering a job. Windows filename separators / and : are rejected; use hyphens and underscores. Duplicate output names add (2), (3), etc. Atomic moves prevent overwriting existing documents, including concurrent exports. Older profiles load default naming values.
-
-Version 0.5.2 validation passed: naming presets/templates, legacy-profile defaults, profile persistence, invalid/reserved filename rejection, concurrent duplicate naming without overwrite, PDF export and recovery, WPF render, and MSI upgrade/install/uninstall/reinstall with shared configuration preserved. No hardware scan was started for this change.
