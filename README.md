@@ -16,7 +16,14 @@ It works directly using Scansnap Home Components so the app must be installed fo
 ## Run and test
 
 Install `dist\ScanBridge-0.5.2.msi`, then open ScanBridge from the Start menu. The installed executable is `C:\Program Files (x86)\ScanBridge\ScanBridge.exe`. The MSI registers all-user startup, scanner integration, and Control Panel uninstall. Shared settings under `C:\ProgramData\ScanBridge` are preserved on upgrade and uninstall. ScanSnap Home must be installed separately. See `installer\README.md` for deployment commands.
+## How to use
+Install Scansnap Home and make sure the scanner is detected
 
+Install ScanBridge
+
+Launch ScanBridge 
+
+Edit your scan configuration and save it (admin creds are required)
 
 ## Implemented
 
