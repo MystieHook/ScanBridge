@@ -1,0 +1,18 @@
+ScanBridge 0.5.2
+
+1. Install ScanSnap Home and the scanner driver on the target PC.
+2. Ensure .NET Framework 4.8 or later is installed (included on current Windows 11).
+3. Double-click ScanBridge-0.5.2.msi and approve administrator permission.
+4. Open ScanBridge from the Start menu and save a shared destination/profile.
+
+ScanBridge starts in the tray when users sign in. It is listed in Task Manager > Startup apps, Windows Installed Apps, and Control Panel > Programs and Features.
+
+To uninstall, select ScanBridge in Installed Apps or Programs and Features. Your scan files, shared profile, and per-user recovery files are kept.
+
+Single-sided scanning: turn off 'Scan both sides', then choose whether the printed side faces away from you (standard) or toward you (opposite side). The latter acquires both sensors and exports only the opposite-side pages. Verify placement and image orientation with a non-sensitive test sheet on each model before general deployment. 'Single-sided' does not limit the feeder to one physical sheet.
+
+This installer does not include ScanSnap Home or any personal settings from the development computer. It is unsigned at this stage.
+
+
+
+Filename options: open Output filename, select a format, enter an optional prefix/custom name, and Save shared profile. Templates support {prefix} {name} {yyyy} {MM} {dd} {HH} {mm} {ss}. Duplicate names add (2), (3), etc.; existing scans are preserved.
